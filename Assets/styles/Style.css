@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+/* Global Styles */
+h1,p {
+	color: #373d40;
+}
+a:hover {
+	color: rgba(255,255,255,1.00);
+}
+
+/* Wrapper */
+#content {
+	clear: both;
+	overflow: hidden;
+	padding-top: 0px;
+}
+
+/* Sidebar */
+#content .sidebar {
+	font-family: 'Arial', sans-serif;
+	color: #ffd500;
+	float: left;
+	width: 20%;
+	padding-top: 50px;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: center;
+	background-color: #ffd500;
+	border-color: #fff;
+	border-radius: 3em 0px 0px 3em;
+	height: 800px;
+	clear: both;
+}
+
+/* Profile Pic */
+.profilePic {
+	margin-top: 15%;
+	width: 50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* main content of the site */
+#content .mainContent {
+	font-family: 'Arial', sans-serif;
+	float: left;
+	width: 70%;
+	text-align: left;
+	padding-left: 4%;
+	padding-top: 50px;
+	background-color: #fff;
+	min-height:100vh;
+}
+
+.toggleS {
+	background-color: #ff9500 !important;
+	border-radius: 0px 3em 3em 0px;
+	width:72% !important;
+	height: 800px !important;
+}
+
+.toggleP {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	padding-right: 10%;
+}
+
+.rotatetog {
+	transform: rotateY(180deg);
+}
+
+/* Whole page content */
+#mainWrapper {
+	width: 100%;
+	padding-left: 0px;
+}
+
+/* form */
+.myForm {
+	font-family: 'Arial', sans-serif;
+	font-size: 1em;
+	line-height: 3em;
+	width: 80%;
+	padding: 10px;
+}
+
+.myForm fieldset {
+	border: none;
+	padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+	padding: 0;
+}
+
+.myForm label.choice {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.myForm label {
+	text-align: left;
+	display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="date"],
+.myForm select,
+.myForm textarea {
+	float: right;
+	width: 70%;
+	background-color: #f5f8f9;
+	border: 1px solid #f5f8f9;
+	border-radius: 5px;
+	font-family: 'Arial', sans-serif;
+	font-size: 0.9em;
+	padding: 10px;
+}
+
+.myForm textarea {
+	height: 100px;
+}
+
+.myForm input:hover,
+.myForm input:focus {
+	border: 1px solid #cad7dd;
+	transition: all 0ms ease-in-out 250ms;
+	outline: none;
+}
+
+.myForm button {
+	padding: 1em 3em;
+	min-width: 150px;
+	border-radius: 0.5em;
+	background: #eee;
+	border: none;
+	font-weight: bold;
+	margin-left: 20%;
+	margin-top: 1.8em;
+}
+
+.myForm button:hover {
+	background: #ccc;
+	cursor: pointer;
+	transition: all 0ms ease-in-out 250ms;
+}
+
+.myForm button ~ .action:hover {
+	background: #60e6c5;
+	cursor: pointer;
+	transition: all 0ms ease-in-out 250ms;
+}
+
+
+/* Radio Icon Button */
+.customize-radio label {
+	float: left;
+}
+
+.customize-radio label > input[type = 'radio'] {
+    visibility: hidden;
+    position: relative;
+}
+
+.customize-radio label > input[type = 'radio'] ~ span{
+    cursor: pointer;
+    display: inline-block;
+	align-content: center;
+    background-repeat: no-repeat;
+}
+
+.Male-ic {
+    background-image: url('../images/Male.svg');
+	background-position: center;
+	width:40px;
+	height:40px;
+	padding:2px;
+	border-radius:50%;
+	background-color: #f5f8f9;
+	
+}
+
+.Female-ic {
+    background-image: url('../images/Female.svg');
+	background-position: center;
+	width:40px;
+	height:40px;
+	padding:2px;
+	border-radius:50%;
+	background-color: #f5f8f9;
+	
+}
+
+.customize-radio label > input[type = 'radio']:hover ~ span.Male-ic,
+.customize-radio label > input[type = 'radio']:hover ~ span.Female-ic {
+	border: 1px solid #cad7dd;
+	transition: all 0ms ease-in-out 250ms;
+	padding:1px;
+}
+
+.customize-radio label > input[type = 'radio']:checked ~ span.Male-ic {
+    background-image: url('../images/Male-w.svg');
+	border: 1px solid #cad7dd;
+	background-color: #cad7dd;
+	padding:1px;
+	transition: all 0ms ease-in-out 250ms;
+}
+
+.customize-radio label > input[type = 'radio']:checked ~ span.Female-ic {
+    background-image: url('../images/Female-w.svg');
+	border: 1px solid #cad7dd;
+	background-color: #cad7dd;
+	padding: 1px;
+	transition: all 0ms ease-in-out 250ms;
+}
+
+
+.Classic-ic, .Silver-ic, .Gold-ic {
+    background-image: url('../images/member.svg');
+	background-position: center;
+	width:40px;
+	height: 28px;
+	padding:8px 2px;
+	border-radius:50%;
+	background-color: #f5f8f9;
+	
+}
+
+.customize-radio label > input[type = 'radio']:hover ~ span.Classic-ic,
+.customize-radio label > input[type = 'radio']:hover ~ span.Silver-ic,
+.customize-radio label > input[type = 'radio']:hover ~ span.Gold-ic {
+	border: 1px solid #cad7dd;
+	transition: all 0ms ease-in-out 250ms;
+	padding:7px 1px;
+}
+
+.customize-radio label > input[type = 'radio']:checked ~ span.Classic-ic,
+.customize-radio label > input[type = 'radio']:checked ~ span.Silver-ic,
+.customize-radio label > input[type = 'radio']:checked ~ span.Gold-ic {
+    background-image: url('../images/member-w.svg');
+	border: 1px solid #cad7dd;
+	background-color: #cad7dd;
+	padding:7px 1px;
+	transition: all 0ms ease-in-out 250ms;
+}
+
+/* date icon */
+.date-ic {
+    background-image:url('../images/Calender.svg');
+    background-repeat:no-repeat;
+   	background-position: 98% center;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-radius: 0px;
+}
+	
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 100%;
+	padding:10px;
+	margin-top: 0px;
+}
+.toggleS {
+	width: 100% !important;
+	height: auto !important;
+	padding: 15px !important;
+}
+	
+.rotatetog {
+	transform: rotate(270deg);
+}
+
+.rotatetogm {
+	transform: rotate(90deg);	
+}
+}

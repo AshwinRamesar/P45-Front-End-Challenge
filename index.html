@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Platform45-FrontEnd Challenge</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="Assets/styles/Style.css" rel="stylesheet" type="text/css">
+
+<!–– jQuery for Date Picker -->
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+
+</head>
+
+<body>
+	<div id="mainWrapper">
+
+		<div id="content">
+   
+			<section class="sidebar"> 
+  				<img class="profilePic" src="Assets/images/profile_pic.svg">
+  				<h1><br>Front-end challenge!<br><br></h1>
+  				<p>This is a design that you will need to <br> code up and impress us.<br><br></p>
+  				<a href="Toggle.html"><img src="Assets/images/toggle.svg" class="rotatetogm"></a>
+    		</section>
+    
+    		<section class="mainContent">
+   				<form class="myForm">
+
+					<p>
+					   	<label>Name
+							<input type="text" name="customer_name" placeholder="Name" required>
+						</label> 
+					</p>
+
+					<fieldset>
+					<p class="customize-radio">
+        				<label>Gender</label>
+        					<span style="float: left ;padding-left: 17%">
+        						<label for="Male">
+        							<input type="radio" name="Gender" id="Male">
+        							<span class="Male-ic"></span>
+        							Male
+        						</label>
+        						<label for="Female">
+        							<input type="radio" name="Gender" id="Female">
+        							<span class="Female-ic"></span>
+        							Female
+        						</label>
+        					</span>
+    				</p>
+					</fieldset>
+
+					<p>
+						<label>Date of Birth
+  							<input type="text" name="dob" placeholder="yyyy/mm/dd" id="Datepicker2"  class="date-ic">
+						</label>
+					</p>
+
+					<p>
+						<label>Email 
+							<input type="email" name="email_address" placeholder="email" required>
+						</label>
+					</p>
+
+					<p>
+						<label>Mobile 
+							<input type="tel" name="phone_number" placeholder="+91 98765 43210">
+						</label>
+					</p>
+
+					<p>
+						<label>Customer ID 
+							<input type="text" name="cu_ID" placeholder="576802-ERD0348 45">
+						</label>
+					</p>
+
+					<fieldset>
+					<p class="customize-radio">
+        				<label>Membership</label>
+        				<span style="float: left; padding-left: 13%">
+        					<label for="Classic">
+        						<input type="radio" name="Membership" id="Classic">
+        						<span class="Classic-ic"></span>
+        						Classic
+        					</label>
+        					<label for="Silver">
+        						<input type="radio" name="Membership" id="Silver">
+        						<span class="Silver-ic"></span>
+        						Silver
+        					</label>
+        					<label for="Gold">
+        						<input type="radio" name="Membership" id="Gold">
+        						<span class="Gold-ic"></span>
+        						Gold
+        					</label>
+        				</span>
+    				</p>
+					</fieldset>
+
+					<p>
+						<button>Cancel</button><button class="action">Save</button>
+					</p>
+
+				</form>
+    
+    		</section>
+  		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(function() {
+			$( "#Datepicker2" ).datepicker(); 
+		});
+	</script>
+</body>
+</html>

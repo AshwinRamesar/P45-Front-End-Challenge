@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238" height="238" viewBox="0 0 238 238">
+    <defs>
+        <ellipse id="a" cx="119.063" cy="118.995" rx="118.469" ry="118.402"/>
+    </defs>
+    <use fill="#FF9200" fill-rule="evenodd" opacity=".6" xlink:href="#a"/>
+</svg>
